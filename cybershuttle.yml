@@ -1,0 +1,36 @@
+project:
+  name: "Fast chat"
+  description: "Fast and easy communication with fast chat"
+  homepage: https://github.com/riccog/cybershuttle
+  authors:
+    - Ricco Goss
+    - Mason Graham
+    - Talam
+    - Ruchira
+  tags:
+    - airavata-courses
+    - spring-2025
+
+workspace:
+  location: /workspace
+  resources:
+    min_cpu: 4
+    min_gpu: 0
+    min_mem: 4096
+    gpu_mem: 1024
+  model_collection:
+    - source: cybershuttle
+      identifier: airavata-courses-fast-chat
+      mount_point: /cybershuttle_data/airavata-courses-fast-chat
+  data_collection: []
+
+additional_dependencies:
+  conda:
+    - python=3.10
+    - pip
+
+  pip:
+    - torch
+    - memory_profiler
+    - transformers
+    - psutil
