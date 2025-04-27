@@ -34,3 +34,4 @@ additional_dependencies:
     - memory_profiler
     - transformers
     - psutil
+    - sentencepiece
