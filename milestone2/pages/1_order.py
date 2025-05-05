@@ -51,6 +51,7 @@ module load {pe}
 
 cd $HOME
 
+pip install torch memory_profiler transformers sentencepeice
 
 # Run your Python script
 python {script_name} "{prompt}"
